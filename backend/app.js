@@ -17,6 +17,9 @@ app.use("/api/games", gameRoutes);
 app.use("/api/platforms", platformRoutes);
 app.use("/api/reviews", reviewRoutes);
 
+// Stats endpoint
+app.use("/api/stats", require("./routes/statsRoutes"));
+
 // Connect to MongoDB
 mongoose
   .connect(process.env.MONGO_URI)
