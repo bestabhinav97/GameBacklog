@@ -1,23 +1,13 @@
-const mongoose = require("mongoose");
+const express = require("express");
+const router = express.Router();
+const {
+  getPlatforms,
+  createPlatform,
+  deletePlatform,
+} = require("../controllers/platformController");
 
-const platformSchema = new mongoose.Schema(
-  {
-    name: {
-      type: String,
-      required: [true, "Platform name is required"],
-      unique: true,
-      trim: true,
-    },
-    manufacturer: {
-      type: String,
-      required: [true, "Manufacturer is required"],
-    },
-    releaseYear: {
-      type: Number,
-      required: [true, "Release year is required"],
-    },
-  },
-  { timestamps: true },
-);
+router.get("/", getPlatforms);
+router.post("/", createPlatform);
+router.delete("/:id", deletePlatform);
 
-module.exports = mongoose.model("Platform", platformSchema);
+module.exports = router;

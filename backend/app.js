@@ -7,6 +7,7 @@ const app = express();
 
 const gameRoutes = require("./routes/gameRoutes");
 const platformRoutes = require("./routes/platformRoutes");
+const reviewRoutes = require("./routes/reviewRoutes");
 
 app.use(cors());
 app.use(express.json());
@@ -14,6 +15,7 @@ app.use(express.json());
 // Routes
 app.use("/api/games", gameRoutes);
 app.use("/api/platforms", platformRoutes);
+app.use("/api/reviews", reviewRoutes);
 
 // Connect to MongoDB
 mongoose
