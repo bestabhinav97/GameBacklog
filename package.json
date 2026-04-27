@@ -4,7 +4,7 @@
   },
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix backLogFrontend\"",
-    "install:all": "npm install --prefix backend && npm install --prefix frontend"
+    "install:all": "npm install --prefix backend && npm install --prefix backLogFrontend"
   },
   "devDependencies": {
     "concurrently": "^9.2.1"
