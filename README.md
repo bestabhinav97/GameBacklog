@@ -40,6 +40,12 @@ cd gamelog
 
 ### 2. Install Dependencies
 
+In the project root run
+
+```
+npm install concurrently --save-dev
+```
+
 Install both frontend and backend dependencies:
 
 ```
