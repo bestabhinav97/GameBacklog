@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import GameList from "./components/GameList";
 import ReviewsPanel from "./components/ReviewsPanel";
-
+import StatsPanel from "./components/StatsPanel";
 function App() {
   const [tab, setTab] = useState("games");
   return (
@@ -38,6 +38,7 @@ function App() {
       <main className="main">
         {tab === "games" && <GameList />}
         {tab === "reviews" && <ReviewsPanel />}
+        {tab === "stats" && <StatsPanel />}
       </main>
     </div>
   );
