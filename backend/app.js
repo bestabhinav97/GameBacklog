@@ -5,12 +5,12 @@ const cors = require("cors");
 
 const app = express();
 
+app.use(cors());
+app.use(express.json());
+
 const gameRoutes = require("./routes/gameRoutes");
 const platformRoutes = require("./routes/platformRoutes");
 const reviewRoutes = require("./routes/reviewRoutes");
-
-app.use(cors());
-app.use(express.json());
 
 // Routes
 app.use("/api/games", gameRoutes);

@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState } from "react";
+import GameList from "./components/GameList";
 
 function App() {
   const [tab, setTab] = useState("games");
@@ -33,6 +34,7 @@ function App() {
           </nav>
         </div>
       </header>
+      <main className="main">{tab === "games" && <GameList />}</main>
     </div>
   );
 }
