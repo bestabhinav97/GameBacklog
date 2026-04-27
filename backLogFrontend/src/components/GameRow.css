@@ -1,0 +1,48 @@
+.game-title {
+  font-weight: 600;
+  color: var(--text);
+}
+.platform-cell {
+  color: var(--text-dim);
+}
+
+.genre-tag {
+  background: var(--surface2);
+  color: var(--text-dim);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.row-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.action-btn {
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+.action-btn:hover {
+  opacity: 0.8;
+}
+.action-btn.edit {
+  background: var(--surface2);
+  color: var(--text-dim);
+}
+.action-btn.del {
+  background: #ef444422;
+  color: var(--red);
+}
