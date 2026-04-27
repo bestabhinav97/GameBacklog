@@ -16,7 +16,7 @@ GameBacklog is a fullstack web application that allows users to track and manage
 ## 📁 Project Structure
 
 ```
-root/
+backlog/
 │
 ├── backend/
 ├── backLogFrontend/
